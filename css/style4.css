@@ -1,6 +1,10 @@
 body{
-    background-color: #fff;
+    background-color: blue;
 }
+.careca{
+	background-color: blue;
+}
+
 div h1{
 	background-color: aliceblue;
 	text-align: center;
