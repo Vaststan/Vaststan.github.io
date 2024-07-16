@@ -1,0 +1,41 @@
+div h1{
+	background-color: aliceblue;
+	text-align: center;
+	padding: 30px;
+}
+div p{
+	background-color: antiquewhite;
+	color: blue;
+	text-align: center;
+	font-size: medium;
+	padding:10%;
+}
+div p img{
+	top: auto;
+	float: left;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+body{
+    background-color: red;
+}
