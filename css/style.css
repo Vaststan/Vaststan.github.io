@@ -21,7 +21,7 @@ background-color: slategray;
 position:relative; 
 float:left; 
 }
-.lista li a{color: white; text-decoration:none; padding:5px 10px; display:block;}
+.lista li a{color: white; text-decoration:none; padding:5px 10px; display:block; text-align: center;}
 
 .lista li a:hover{
   background:#333; 
