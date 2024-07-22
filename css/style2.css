@@ -31,6 +31,10 @@ a {
 	color: #fff;
 	text-decoration: none;
 }
+ul button{
+	display: block; 
+	margin: auto;
+}
 button{
 	transition: all 1.0s ease-in;
 	border-bottom-width: 10px;
