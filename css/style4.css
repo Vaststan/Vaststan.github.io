@@ -1,28 +1,20 @@
-.careca{
-	background-color: blue;
-}
-div h1{
-	background-color: aliceblue;
-	text-align: center;
-	padding: 30px;
-}
-div p{
-	background-color: antiquewhite;
-	color: blue;
-	text-align: center;
-	font-size: medium;
-	padding:10%;
-}
-div p img{
-	top: auto;
-	float: left;
+body{
+    background-color: aqua;
 }
 footer {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
+	padding: 30px;
+	width: 100%;
 	text-align: center;
-	margin-top: 50px;
+	margin: auto;
+	position: fixed;
+	top: auto;
+	left: 0;
+}
+div h1{
+	text-align: center;
+    font-size: 100px;
 }
 ul {
 	list-style: none;
@@ -31,11 +23,107 @@ ul {
 }
 
 li {
-	display: flex;
+	display: inline-block;
 	margin: 0 10px;
 }
 
 a {
 	color: #fff;
 	text-decoration: none;
+}
+button{
+	transition: all 1.0s ease-in;
+	border-bottom-width: 10px;
+	text-align: center;
+}
+.careca{
+    background-color: blue;
+}
+section{
+    background: #1a142f;
+    position: absolute;
+    padding: 85px 15% 70px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: #1a142f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.logo{
+    font-size: 33px;
+    color: white;
+    font-weight: 700;
+}
+
+span{
+    color: rgb(38, 38, 230);
+}
+
+.footer-content h4{
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+.footer-content li{
+    margin-bottom: 16px;
+}
+
+.footer-content li a{
+    display: block;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color:white;
+
+}
+
+.footer-content p {
+    color: aliceblue;
+    font: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icon a{
+    display:inline-block ;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    transition: all, .40s ease;
+}
+
+.icon a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+
+h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer-content img{
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    float: right;
+}
+.Hobies{
+    display: inline;
+}
+nav{
+    background: #1a142f;
 }
