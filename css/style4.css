@@ -1,129 +1,85 @@
-body{
-    background-color: aqua;
+html:root {
+  height: 100%;
 }
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 30px;
-	width: 100%;
-	text-align: center;
-	margin: auto;
-	position: fixed;
-	top: auto;
-	left: 0;
+input {
+  box-sizing: border-box;
+  outline: none;
 }
-div h1{
-	text-align: center;
-    font-size: 100px;
+body {
+  background: linear-gradient(180deg, #fe8c00 0%, #f83600 100%);
+  background-size: 100%;
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-
-li {
-	display: inline-block;
-	margin: 0 10px;
+#formulario {
+  width: 500px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 30px;
 }
-
-a {
-	color: #fff;
-	text-decoration: none;
+#formulario legend {
+  color: #f94d00;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
 }
-button{
-	transition: all 1.0s ease-in;
-	border-bottom-width: 10px;
-	text-align: center;
+.input-group {
+  margin: 10px 0;
 }
-.careca{
-    background-color: blue;
-}
-section{
-    background: #1a142f;
-    position: absolute;
-    padding: 85px 15% 70px;
-}
-.footer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    gap: 3.5rem;
-    background: #1a142f;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.logo{
-    font-size: 33px;
-    color: white;
-    font-weight: 700;
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #393939;
+  cursor: pointer;
 }
 
-span{
-    color: rgb(38, 38, 230);
+.input-group input:not([type="checkbox"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  display: block;
+  width: 100%;
+}
+.input-group input:focus {
+  border-color: #20b2aa;
 }
 
-.footer-content h4{
-    color: white;
-    margin-bottom: 1.5rem;
-    font-size: 16px;
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
 }
-
-.footer-content li{
-    margin-bottom: 16px;
+.colunas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.footer-content li a{
-    display: block;
-    color: aliceblue;
-    font-size: 15px;
-    font-weight: 400;
-    transition: all .40s ease;
+.colunas .input-group {
+  width: 48%;
 }
-
-.footer-content li a:hover {
-    transform: translateY(-3px) translateX(-5px);
-    color:white;
-
+.footer {
+  text-align: center;
 }
-
-.footer-content p {
-    color: aliceblue;
-    font: 16px;
-    line-height: 30px;
-    margin: 20px 0;
+.botao {
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
-
-.icon a{
-    display:inline-block ;
-    font-size: 25px;
-    color: white;
-    margin-right: 20px;
-    transition: all, .40s ease;
-}
-
-.icon a:hover{
-    color: white;
-    transform: translateY(-5px);
-}
-
-h1{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    margin-top: 50px;
-}
-.footer-content img{
-    text-align: center;
-    margin: auto;
-    padding: 0px;
-    float: right;
-}
-.Hobies{
-    display: inline;
-}
-nav{
-    background: #1a142f;
+.botao:hover {
+  background: #5988bd;
 }
