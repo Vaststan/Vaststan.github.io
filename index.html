@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo do Vôlei Sentado</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .slide-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .slide-header {
+            background: linear-gradient(135deg, #1e5799 0%,#207cca 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .slide-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .slide-content {
+            padding: 30px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #1e5799;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid #207cca;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -10px;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: #207cca;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .highlight-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #1e5799;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .highlight-title {
+            color: #1e5799;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .benefits-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            flex: 1 1 200px;
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #2e7d32;
+        }
+        
+        .benefit-title {
+            color: #2e7d32;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .brazil-flag {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .left::after, .right::after {
+                left: 21px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <h1>Vôlei Sentado: Linha do Tempo e Destaques</h1>
+            <p>Principais marcos e a trajetória do Brasil na modalidade</p>
+        </div>
+        
+        <div class="slide-content">
+            <div class="timeline">
+                <!-- Linha do Tempo -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1956</div>
+                        <p>Criação do vôlei sentado, unindo elementos do voleibol tradicional com o jogo alemão "sitzbal". O esporte nasceu como uma adaptação inclusiva para pessoas com deficiência.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">1980</div>
+                        <p>Inclusão oficial do vôlei sentado no programa dos Jogos Paralímpicos, marcando o reconhecimento internacional da modalidade como esporte paralímpico.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2008</div>
+                        <p><img class="brazil-flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d11bcc6d-91b1-4f1d-bc2f-9228b1effb89.png" alt="Bandeira do Brasil"> Estreia histórica da seleção brasileira nos Jogos Paralímpicos de Pequim, marcando o início da trajetória do país na modalidade.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2012</div>
+                        <p><img class="brazil-flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/184a30b3-fe02-4512-bf09-75b00be81b69.png" alt="Bandeira do Brasil"> Brasil conquista a medalha de prata nos Jogos Paralímpicos de Londres, mostrando crescimento rápido e consistente na modalidade.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2016</div>
+                        <p><img class="brazil-flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d1485a6-376c-4dc5-92dc-c4622bd3a9e4.png" alt="Bandeira do Brasil"> Ouro histórico para o Brasil nos Jogos Paralímpicos do Rio de Janeiro, consolidando o país como potência no vôlei sentado.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020-2021</div>
+                        <p><img class="brazil-flag" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c823d49c-b57c-4089-91ea-008b69519497.png" alt="Bandeira do Brasil"> Participação destacada nos Jogos Paralímpicos de Tóquio (realizados em 2021), mantendo o alto nível competitivo da seleção brasileira.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Principais Jogadores -->
+            <div class="highlight-box">
+                <div class="highlight-title">Principais Jogadores Brasileiros</div>
+                <ul>
+                    <li><strong>Avelino Ferreira da Silva</strong> - Capitão e líder da seleção brasileira</li>
+                    <li><strong>Renato Oliveira</strong> - Destaque na conquista do ouro em 2016</li>
+                    <li><strong>Gilberto Lourenço</strong> - Maior pontuador em várias competições</li>
+                    <li><strong>Bruno de Mello</strong> - Jovem promessa da seleção</li>
+                </ul>
+            </div>
+            
+            <!-- Participação do Brasil -->
+            <div class="highlight-box" style="background-color: #e8eaf6; border-left-color: #3949ab;">
+                <div class="highlight-title" style="color: #3949ab;">Trajetória do Brasil no Vôlei Sentado</div>
+                <p>O Brasil rapidamente se tornou uma potência no vôlei sentado, com conquistas relevantes em poucos anos de participação:</p>
+                <ul>
+                    <li><strong>2008 (Pequim):</strong> Primeira participação paralímpica</li>
+                    <li><strong>2012 (Londres):</strong> Medalha de prata</li>
+                    <li><strong>2016 (Rio):</strong> Medalha de ouro em casa</li>
+                    <li><strong>2021 (Tóquio):</strong> Manutenção do alto nível</li>
+                </ul>
+            </div>
+            
+            <!-- Principais Seleções -->
+            <div>
+                <h3 style="color: #1e5799; margin: 25px 0 15px;">Principais Seleções Mundiais</h3>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-title">Brasil</div>
+                        <p>Bicampeão Paralímpico (2012 prata, 2016 ouro)</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-title">Irã</div>
+                        <p>Maior potência asiática, várias medalhas</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-title">Rússia</div>
+                        <p>Tradição forte no esporte paralímpico</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-title">Holanda</div>
+                        <p>Líder europeia com ótimo histórico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
